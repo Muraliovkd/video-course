@@ -1,0 +1,16 @@
+title: 'Video '
+description: 'https://www.twitch.tv/loeya?tt_medium=mobile_web_share&tt_content=channel'
+template:
+  repo: video-template
+  name: video
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
